@@ -1,0 +1,407 @@
+[1] アメリカの首都はどこですか？
+[2] １：ニューヨーク
+[3] ２：ワシントン
+[4] ３：ロサンジェルス
+[5] 答えを番号で入力し，改行を押してください。=>2
+ 
+正解です
+
+
+@charset "UTF-8";
+
+
+body {
+	font-size:14px;
+	color:#333333;
+	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	line-height:1.6;
+	background:#ffffff;
+}
+
+.inner {
+	position:relative;
+	width:980px;
+	margin:0 auto;
+}
+
+header {
+	box-sizing:border-box;
+	position:relative;
+	width:100%;
+	background:#fcfcfc;
+}
+
+nav {
+	width:100%;
+	background:#fff;
+	box-shadow:0 1px 2px #d0d8dc;
+	⁄zoom:1;
+}
+nav:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+#contents {
+	overflow:hidden;
+	width:980px;
+	margin:20px auto;
+	background:#ffffff;
+}
+
+#main {
+	box-sizing:border-box;
+	overflow:hidden;
+	float:left;
+	width:68%;
+}
+
+#sub {
+	box-sizing:border-box;
+	overflow:hidden;
+	float:right;
+	width:28%;
+}
+
+footer {
+	box-sizing:border-box;
+	width:100%;
+	margin:0 auto;
+}
+
+a {
+	color:#333333;
+	text-decoration:underline;
+}
+a:hover {
+	color:#333333;
+	text-decoration:none;
+}
+
+h2 {
+	margin-bottom:0.5em;
+	padding:10px 0;
+	font-size:21px;
+	color:#333333;
+	border-top:3px solid #1d695f;
+	border-bottom:1px dotted #1d695f;
+}
+
+h3 {
+	margin-bottom:0.25em;
+	padding:2px 5px;
+	color:#ffffff;
+	font-size:16px;
+	background:#333333;
+}
+
+h4 {
+	margin-bottom:0.25em;
+	font-size:15px;
+	color:#1d695f;
+	border-bottom:3px solid #1d695f;
+}
+
+h5 {
+	position:relative;
+	margin-bottom:0.25em;
+	padding-left:10px;
+	color:#710000;
+	font-size:14px;
+	font-weight:bold;
+}
+h5:before {
+	content:"";
+	margin-top:-7px;
+	position:absolute;
+	top:50%;
+	left:0;
+	width:5px;
+	height:14px;
+	background:#8c0e0e;
+}
+
+h6 {
+	margin-bottom:0.25em;
+	color:#382400;
+	font-size:14px;
+	font-weight:bold;
+}
+
+p {
+	margin:0 0 1em 0;
+}
+
+img {
+	vertical-align:bottom;
+}
+
+em {
+	font-weight:bold;
+}
+
+strong {
+	font-weight:bold;
+	color:#ff0000;
+}
+
+pre {
+	margin:1em 0;
+	padding:1em;
+}
+
+blockquote {
+	margin-bottom:1em;
+	padding:1em;
+	border:1px dotted #dddddd;
+	border-left:5px solid #dddddd;
+}
+
+ul,ol,dl {
+	margin:0 0 1em 0;
+}
+ul li {
+	list-style:disc;
+}
+ol li {
+	list-style:decimal;
+}
+li {
+	margin-left:2em;
+}
+
+dt {
+	margin-bottom:0.5em;
+	border-bottom:1px dotted #dddddd;
+}
+dt:before {
+	content:"\0025a0";
+}
+dd {
+	margin-bottom:1em;
+}
+
+table {
+	width:100%;
+	margin-bottom:1em;
+	border-collapse:collapse;
+	border:1px solid #ddd;
+	background:#fff;
+}
+th {
+	padding:10px;
+	text-align:center;
+	vertical-align:middle;
+	border:1px solid #ddd;
+	background:#eee;
+}
+td {
+	padding:10px;
+	text-align:left;
+	border:1px solid #ddd;
+}
+
+header {
+	padding:30px 10px;
+}
+
+.summary {
+	position:absolute;
+	top:0;
+	right:10px;
+	margin:0;
+}
+
+
+
+	nav {
+		background:#1d695f;
+		border-bottom:5px solid #1d695f;
+		box-shadow:0 1px 3px #999999;
+		z-index:3;
+	}
+
+	nav ul {
+		margin:0;
+		padding:0;
+	}
+
+	nav ul li {
+		position:relative;
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+
+	nav ul li a {
+		display:block;
+		margin:0;
+		padding:16px 0;
+		background:#1d695f;
+		color:#ffffff;
+		font-size:14px;
+		font-weight:bold;
+		line-height:1;
+		text-decoration:none;
+	}
+
+	nav ul li:hover > a {
+		color:#ffffff;
+		background:#1d695f;
+	}
+
+
+#chat-frame {
+  min-width: 320px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1em 2em;
+  background-color: #a5a79a;
+}
+.chat-talk {
+  overflow: hidden;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.chat-talk span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.chat-talk .talk-icon {
+  float: left;
+  width: auto;
+}
+.chat-talk .talk-content {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  min-height: 50px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 0 auto 0 70px;
+  padding: 1em;
+}
+.chat-talk .talk-icon img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.chat-talk .talk-content:before {
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 10px solid transparent;
+  border-right-color: #ffffff;
+}
+.chat-talk.mytalk .talk-icon {
+  float: right;
+}
+.chat-talk.mytalk .talk-content {
+  margin: 0 70px 0 auto;
+  color: #000;
+  background: #dbdf19;
+}
+.chat-talk.mytalk .talk-content:before {
+  right: -20px;
+  left: auto;
+  border-color: transparent;
+  border-left-color: #dbdf19;
+}
+
+
+
+
+.bnr {
+	overflow:hidden;
+}
+.bnr ul {
+	overflow:hidden;
+}
+.bnr li {
+	margin:0 0 10px 0;
+	padding:0;
+	list-style:none;
+}
+.bnr li a:hover {
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	-ms-filter:"alpha( opacity=80 )";
+}
+.bnr img {
+	width:100%;
+}
+
+footer {
+	clear:both;
+}
+
+
+.copyright {
+	clear:both;
+	padding:20px ;
+	font-size:11px;
+	text-align:center;
+	color:#efede9;
+	background:#2e2e2e;
+}
+
+
+.list {
+	padding:0 0 0 0.5em;
+}
+.list li {
+	margin:0;
+	padding:0 0 0 15px;
+	list-style:none;
+	background:url(../images/check.png) 0 5px no-repeat;
+}
+
+.info dt {
+	border-bottom:none;
+}
+.info dd {
+	padding-bottom:1em;
+	border-bottom:1px solid #dddddd;
+}
+
+.col_two_one {
+	overflow:hidden;
+}
+
+.col_two_one ul {
+	overflow:hidden;
+	margin:2% -2% 0 0;
+}
+.col_two_one li {
+	list-style:none;
+	float:left;
+	width:48%;
+	margin:0 2% 2% 0 ;
+}
+.col_two_one li:nth-child(2n+1) {
+	clear:both;
+}
+.col_two_one li img {
+	width:100%;
+	margin-bottom:2.5%;
+}
+
+
+.blockB {
+	float:right;
+	width: 230px;
+	padding-left:70px;
+}
+
+
+
+
+
