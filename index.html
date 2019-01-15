@@ -2,9 +2,23 @@
 <html>
 <head>
 <meta charset="utf-8">
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>    
+    
 <title>山形県クイズ公式サイト</title>
 
 <link rel="stylesheet" type="text/css" href="quiz.css">
+    
+    
+ <script>
+$(function() {
+  $('input').click(function() {
+    if ($(this).val() == 2) alert('正解！');
+    else alert('はずれ！');
+  });
+});
+</script>
+    
     
     <style type="text/css">
         
@@ -110,6 +124,20 @@
 <br>
     
 
+    
+    
+    
+  <p>あなたの好きな食べ物は？</p>
+  <p>
+    <input type="radio" name="food" value="1">そば
+    <input type="radio" name="food" value="2">うどん
+    <input type="radio" name="food" value="3">ラーメン
+  </p>   
+    
+    
+    
+    
+    
 
 <div id="box">
   <button type="button" id="blue-button" onclick="bluecolor()">青色にする</button>
