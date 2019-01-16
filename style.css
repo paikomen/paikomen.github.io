@@ -16,14 +16,11 @@ body {
     max-height: 210px;
     z-index: 100000;
     
-    color: #5391BA;
+    color: #535353;
     font-weight: bold;
     text-align: center;
     padding: 0.25em;
-    border-top: solid 2px #6cb4e4;
-    border-bottom: solid 2px #6cb4e4;
-    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+
 
 }
 #commonHeader section#flows {
@@ -153,7 +150,7 @@ main {
 .answer {
 	font-size:15px;
 	line-height:1.5em;
-	color:#000000;
+	color:#535353;
 	padding:10px;
 }
 .sig{
@@ -211,12 +208,12 @@ main {
 }
 
 .btnBox_y{
-    background-color: #FF8DB4;
+    background-color: #FF3344;
     margin-right: 40px;
 }
 
 .btnBox_n{
-    background-color: #62D7DE;
+    background-color: #336633;
 }
 
 .q{
@@ -229,8 +226,7 @@ main {
 }
 
 .point_box {
-    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+   
     padding: 4px;
     margin: 10px 5px 10px;
     font-size:110%;
@@ -249,8 +245,8 @@ main {
 }
 .point_box .title{
     position: relative;
-    border-top: solid 2px #80c8d1;
-    border-bottom: solid 2px #80c8d1;
+    border-top: solid 2px #336633;
+    border-bottom: solid 2px #336633;
     background: #f4f4f4;
     line-height: 1.4;
     padding: 0.4em 0.5em;
@@ -261,8 +257,8 @@ main {
 .point_box .title:after {/*タブ*/
     position: absolute;
     font-family: FontAwesome,'Quicksand','Avenir','Arial',sans-serif;
-    content: '\f0a7\ Result';
-    background: #80c8d1;
+    
+    background: #fff;
     color: #fff;
     left: 0px;
     bottom: 100%;
@@ -279,7 +275,7 @@ main {
     text-align: left;
 }
 .bg-y {
-    background: #FFFF73;
+    background: #FFFF66;
 }
 .fs-18 {
     font-size: 120%;
@@ -306,8 +302,8 @@ main {
     padding: 0.5em 1em;
     text-decoration: none;
     background: #f7f7f7;
-    border-left: solid 6px #ff7c5c;/*左線*/
-    color: #ff7c5c;/*文字色*/
+    border-left: solid 6px #336633;/*左線*/
+    color: #336633;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
